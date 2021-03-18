@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
+
 .App {
   width: 100%;
   height: 100%;
@@ -20,7 +21,7 @@
 @keyframes changeBgLight{
   100%{background-color: #f7f7f7;}
   50%{background-color: gray;}
-  0%{background-color: #010101;}
+  0%{background-color: #0f0d0a;}
 }
 
 .containerDark{
@@ -37,7 +38,7 @@
 @keyframes changeBgDark{
   0%{background-color: #f7f7f7;}
   50%{background-color: gray;}
-  100%{background-color: #010101;}
+  100%{background-color: #0f0d0a;}
 }
 
 
@@ -59,7 +60,7 @@
 
 .nav-bar {
   width: 90vw;
-  height: 3vw;
+  height: 3.2vw;
   margin-top: 30px;
   border-radius: 10px;
   background-color: transparent;
@@ -70,15 +71,16 @@
 }
 
 .logo {
-  margin-top: 25px;
-  width: 55px;
-  height: 30px;
+  margin-top: 21px;
+  width: 45px;
+  height: 25px;
+  margin-left: 10px;
   background-image: url('./Content/logo-purple.svg');
   background-repeat: no-repeat;
   background-size: contain;
   padding: 10pt;
   font-size: larger;
-  box-shadow: 10pt #010101; 
+  box-shadow: 10pt #0f0d0a; 
 }
 
 
@@ -97,29 +99,36 @@
 
 .nav-links a{
   font-family: 'Mulish', sans-serif;
-  color: #010101;
+  color: #0f0d0a;
   font-size: large;
   font-weight: bolder;
   margin: 20px;
   text-decoration: none;
 }
 
-.nav-links-dark{
-  font-family: 'Mulish', sans-serif;
-  color: #010101;
-  font-size: large;
-  font-weight: 600;
-  margin: 15px;
-  text-decoration: none;
-  animation: 1s ease-in 0s fontColorChange 1 forwards ;
-}
-
-@keyframes fontColorChange{
-  0%{color: #010101;}
-  100%{color: #f7f7f7;}
-}
 
 .nav-links a:hover{
+  color: darkorchid;
+  font-size: larger;
+  transition-duration: 1s;
+}
+
+.nav-links-dark{
+  display: inline-block;
+  margin: 10px;
+}
+
+.nav-links-dark a{
+  font-family: 'Mulish', sans-serif;
+  color: #f7f7f7;
+  font-size: large;
+  font-weight: bolder;
+  margin: 20px;
+  text-decoration: none;
+}
+
+
+.nav-links-dark a:hover{
   color: darkorchid;
   font-size: larger;
   transition-duration: 1s;
@@ -200,13 +209,28 @@
   display: inline-block;
   position: absolute;
   align-self: flex-end;
+  padding: 10px;
   font-size: large;
-  padding-bottom: 40px;
-  
-  color: firebrick;
+  margin-right: 10px;
+  margin-bottom: 40px;
+  color: #0f0d0a;
   font-weight: 600;
   font-family: 'Mulish', sans-serif;
 }
+
+.contact-dark{
+  display: inline-block;
+  position: absolute;
+  align-self: flex-end;
+  padding: 10px;
+  font-size: large;
+  margin-right: 25px;
+  margin-bottom: 40px;
+  color: #f7f7f7;
+  font-weight: 600;
+  font-family: 'Mulish', sans-serif;
+}
+
 .contact img{
   margin-left: 10px;
   margin-top: 5px;
@@ -214,13 +238,31 @@
 
 .contact a{
   text-decoration: none;
-  color: firebrick;
+  color: #0f0d0a;
+  font-size: large;
+  margin: 3px;
+
+}
+
+.contact-dark img{
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.contact-dark a{
+  text-decoration: none;
+  color: #f7f7f7;
   font-size: large;
   margin: 3px;
 
 }
 
 .contact a:hover{
+  color: darkorchid;
+
+}
+
+.contact-dark a:hover{
   color: darkorchid;
 
 }
@@ -240,3 +282,125 @@
   0%{opacity: 0;}
   100%{opacity: 1;}
 }
+
+/* Design Screen */
+
+.portraitContainer{
+  width: 80%;
+  margin-top: 5%;
+  background-color: "white";
+  z-index: 0;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: space-between;
+  
+}
+
+.img-div {
+  height: 60%;
+  width: 20%;
+  opacity: 0.5;
+  border-radius: 10px;
+  background-color: teal;
+  margin: 5%;
+  z-index: 1000;
+}
+
+.img-div img{
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.img-div-center{
+  height: 70%;
+  width: 23%;
+  opacity: 1;
+  border-radius: 10px;
+  background-color: teal;
+  margin: 5%;
+  z-index: 7;
+  animation: getBig 1s 0.5s 1 forwards;
+}
+
+@keyframes getBig {
+  0%{height: 70%;
+    width: 23%;
+    }
+  25%{height: 70%;
+  width: 23%;}  
+  50%{height: 85%;
+  width: 29%;
+  }
+  75%{height: 75;
+  width: 25;}
+  100%{height: 87%;
+    width: 31%;
+    }
+}
+
+.img-div-center img{
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.logicSign{
+  opacity: 0.5;
+  z-index: 100;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bolder;
+  color: #f7f7f7;
+  transform: scale(2);
+}
+
+.logicSign:hover{
+transition-duration: 0.5s;
+
+opacity: 1;
+font-size: 20px;
+}
+
+/* Snow Animation */
+
+.snow {
+	position: absolute;
+	min-width: 100vw;
+	min-height: 100vh;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.snow .svg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#snow-top-layer {
+	will-change: transform;
+	transform: translateY(-768px);
+	animation: fall 22.5s infinite linear;
+}
+
+#snow-bottom-layer {
+	will-change: transform;
+	transform: translateY(-768px);
+	animation: fall 45s infinite linear;
+}
+
+@keyframes fall {
+	
+	100% {
+		transform: translateY(0);
+	}
+	
+}
+
