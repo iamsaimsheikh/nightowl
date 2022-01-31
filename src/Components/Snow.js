@@ -4,9 +4,22 @@ function Snow({color}) {
     return (
         <div className="hero">
                <div class="snow">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1536" preserveAspectRatio="xMidYMax slice">
-		    <g fill={color} fill-opacity="1" transform="translate(55 42)">
+        <svg xmlns="http://www.w3.org/2000/svg" height='auto' width='auto'  >
+		    <g fill={color} fill-opacity="1"  transform="translate(300 100)">
 			   <g id="snow-bottom-layer">
+			   	  <ellipse cx="6" cy="1009.5" rx="6" ry="5.5"/>
+				  <ellipse cx="138" cy="1110.5" rx="6" ry="5.5"/>
+				  <ellipse cx="398" cy="1055.5" rx="6" ry="5.5"/>
+				  <ellipse cx="719" cy="1284.5" rx="6" ry="5.5"/>
+				  <ellipse cx="760" cy="1155.5" rx="6" ry="5.5"/>
+				  <ellipse cx="635" cy="1459.5" rx="6" ry="5.5"/>
+				  <ellipse cx="478" cy="1335.5" rx="6" ry="5.5"/>
+				  <ellipse cx="322" cy="1414.5" rx="6" ry="5.5"/>
+				  <ellipse cx="247" cy="1234.5" rx="6" ry="5.5"/>
+				  <ellipse cx="154" cy="1425.5" rx="6" ry="5.5"/>
+				  <ellipse cx="731" cy="773.5" rx="6" ry="5.5"/>
+				  <ellipse cx="599" cy="874.5" rx="6" ry="5.5"/>
+				  <ellipse cx="339" cy="819.5" rx="6" ry="5.5"/>
 				  <ellipse cx="6" cy="1009.5" rx="6" ry="5.5"/>
 				  <ellipse cx="138" cy="1110.5" rx="6" ry="5.5"/>
 				  <ellipse cx="398" cy="1055.5" rx="6" ry="5.5"/>
@@ -47,6 +60,20 @@ function Snow({color}) {
 				  <ellipse cx="826" cy="175.5" rx="6" ry="5.5"/>
 				  <ellipse cx="626" cy="286.5" rx="6" ry="5.5"/>
 				  <ellipse cx="887" cy="598.5" rx="6" ry="5.5"/>
+				  <ellipse cx="478" cy="567.5" rx="6" ry="5.5"/>
+				  <ellipse cx="322" cy="646.5" rx="6" ry="5.5"/>
+				  <ellipse cx="247" cy="466.5" rx="6" ry="5.5"/>
+				  <ellipse cx="154" cy="657.5" rx="6" ry="5.5"/>
+				  <ellipse cx="731" cy="5.5" rx="6" ry="5.5"/>
+				  <ellipse cx="599" cy="106.5" rx="6" ry="5.5"/>
+				  <ellipse cx="339" cy="51.5" rx="6" ry="5.5"/>
+				  <ellipse cx="239" cy="236.5" rx="6" ry="5.5"/>
+				  <ellipse cx="113" cy="95.5" rx="6" ry="5.5"/>
+				  <ellipse cx="102" cy="455.5" rx="6" ry="5.5"/>
+				  <ellipse cx="395" cy="387.5" rx="6" ry="5.5"/>
+				  <ellipse cx="826" cy="175.5" rx="6" ry="5.5"/>
+				  <ellipse cx="626" cy="286.5" rx="6" ry="5.5"/>
+				  <ellipse cx="887" cy="598.5" rx="6" ry="5.5"/>
 			   </g>
 		    </g>
 		    <g fill={color} fill-opacity="0.8" transform="translate(65 63)">
@@ -73,6 +100,7 @@ function Snow({color}) {
 				  <circle cx="24" cy="537" r="8" transform="rotate(180 24 537)"/>
 			   </g>
 		    </g>
+			
 		</svg>
     </div>
         </div>
