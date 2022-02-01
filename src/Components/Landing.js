@@ -21,7 +21,7 @@ function Landing() {
             <div class="loader-inside"></div>
             </div>
             <div className='col-two'>
-                <h2>Welcome to my portfolio!</h2>
+                <h2 className='nightowl'>N I G H T <span style={{marginLeft:'15px'}}> O W L </span> </h2>
                 <h1>I'm a <div id='fadeUp'> <span id='field'> </span></div></h1>
                 <div className='icon-grid'>
                     <img className='icon' src={wordpress}/>
