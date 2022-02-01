@@ -387,6 +387,7 @@
   font-size: 46px !important;
   
   background: -webkit-linear-gradient(-45deg,#999999, #666666 ,#111111);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
